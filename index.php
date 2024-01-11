@@ -50,10 +50,20 @@ if (!empty($_POST['email'])){
   </div>
   
 
-<!-- 
+
+  <?php if($error === true) : ?>
+
 <div class="alert alert-danger" role="alert">
 Error Email
-</div> -->
+</div>
+
+  <?php elseif($error === false) : ?>
+<div class="alert alert-success" role="alert">
+Correct Email
+</div>
+
+
+  <?php endif?>
 
 
 
